@@ -17,7 +17,7 @@ const app = express();
 connectDB();
 
 //allow client to use consume back-end
-app.use(cors);
+app.use(cors());
 
 app.use('/graphql', graphqlHTTP({
   schema,
